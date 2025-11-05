@@ -7,6 +7,15 @@
   --border: #e5e7eb;
   --accent: #0ea5e9;
 }
+/* Default dark theme (when .dark class is on body) */
+body.dark {
+  --bg: #0b0c0f;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --card: #111217;
+  --border: #26282e;
+  --accent: #38bdf8;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0b0c0f;
