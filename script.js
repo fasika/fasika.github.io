@@ -39,3 +39,22 @@ function card(p) {
     </article>
   `;
 }
+// === THEME TOGGLE ===
+const toggle = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme');
+
+// Apply saved preference on load
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark');
+  toggle.textContent = '🌙';
+} else {
+  toggle.textContent = '🌞';
+}
+
+// Listen for toggle clicks
+toggle.addEventListener('click', () => {
+  const isDark = document.body.classList.toggle('dark');
+  toggle.textContent = isDark ? '🌙' : '🌞';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
