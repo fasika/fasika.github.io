@@ -1,78 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasika Melese - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 0.5em;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        section {
-            padding: 2em;
-        }
-        h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 1em;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fasika — Data Portfolio</title>
+  <meta name="description" content="Projects, analyses, and visualizations by Fasika." />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Fasika Minda Melese</h1>
-        <p>Data Analyst</p>
-    </header>
-    <nav>
-        <a href="#courses">Courses</a>
-        <a href="#projects">Academic Projects</a>
-        <a href="#resume">Resume</a>
-    </nav>
-    <section id="courses">
-        <h2>Courses</h2>
-        <ul>
-            <li>Course 1: Introduction to Data Science</li>
-            <li>Course 2: Data Administration Concepts & Database Management</li>
-            <li>Course 3: Information Visualization</li>
-            <li>Course 4: Scripting for Data Analysis</li>
-            <li>Course 5: Business Analytics</li>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <h1>Fasika</h1>
+      <p class="tagline">Data Analyst · Researcher · Educator</p>
+      <nav aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <h2>Turning raw data into clear decisions</h2>
+        <p>Specializing in cleaning messy survey datasets, statistical analysis, and clear storytelling with tables, charts, and reproducible notebooks.</p>
+        <ul class="meta">
+          <li><strong>Toolkit:</strong> Python (pandas, NumPy), R (tidyverse), SQL, Power BI/Tableau</li>
+          <li><strong>Focus:</strong> education, accessibility, program evaluation</li>
         </ul>
+      </div>
     </section>
-    <section id="projects">
-        <h2>Academic Projects</h2>
-        <ul>
-            <li>Project 1: Responsive Website Design</li>
-            <li>Project 2: Online Quiz Application</li>
-            <li>Project 3: Database-driven Web Application</li>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>Selected Projects</h2>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button data-filter="all" aria-pressed="true">All</button>
+            <button data-filter="python">Python</button>
+            <button data-filter="r">R</button>
+            <button data-filter="viz">Viz</button>
+            <button data-filter="sql">SQL</button>
+          </div>
+        </div>
+        <div id="project-grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section id="writing" class="section">
+      <div class="wrap">
+        <h2>Writing & Case Studies</h2>
+        <ul class="list">
+          <!-- Replace with your posts or repo READMEs -->
+          <li>
+            <a href="https://github.com/fasika" target="_blank" rel="noopener">How I clean large survey datasets</a>
+            <span class="list-note">process • reproducibility • code examples</span>
+          </li>
+          <li>
+            <a href="https://github.com/fasika" target="_blank" rel="noopener">Visualizing accessibility metrics</a>
+            <span class="list-note">dashboards • storytelling • design</span>
+          </li>
         </ul>
+      </div>
     </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Your resume content goes here. Include your education, skills, work experience, etc.</p>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About</h2>
+        <p>I analyze complex datasets to surface actionable insights and communicate them clearly. Comfortable moving from data cleaning to statistical testing to visual design and documentation.
+        </p>
+      </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>
+          <a class="btn" href="mailto:you@email.com">you@email.com</a>
+          <a class="btn" href="resume.pdf">Résumé</a>
+          <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/fasika" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Fasika. Built with GitHub Pages.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
