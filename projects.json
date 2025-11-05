@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Survey Cleaning Pipeline",
+    "summary": "From raw CSVs to tidy data: de-duplication, imputation, and validation with reproducible logs.",
+    "tags": ["python", "viz"],
+    "code": "https://github.com/fasika/survey-cleaning-pipeline",
+    "post": "https://github.com/fasika/survey-cleaning-pipeline#readme"
+  },
+  {
+    "title": "Accessibility Metrics Dashboard",
+    "summary": "Interactive indicators for course accessibility across departments (Power BI & SQLite).",
+    "tags": ["viz", "sql"],
+    "demo": "https://fasika.github.io/accessibility-dashboard/",
+    "code": "https://github.com/fasika/accessibility-dashboard"
+  },
+  {
+    "title": "R: Cohort Outcomes Study",
+    "summary": "Statistical analysis of program outcomes with tidyverse, broom, and ggplot2.",
+    "tags": ["r", "viz"],
+    "code": "https://github.com/fasika/cohort-outcomes-r"
+  }
+]
