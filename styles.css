@@ -33,6 +33,12 @@ body {
   background: var(--bg); color: var(--text); line-height: 1.6;
 }
 .wrap { max-width: 1040px; margin-inline: auto; padding: 1.25rem; }
+.site-header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 .skip-link { position: absolute; left: -9999px; top: auto; }
 .skip-link:focus { left: 1rem; top: 1rem; background: var(--accent); color: #fff; padding: .5rem .75rem; border-radius: .5rem; }
